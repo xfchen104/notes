@@ -1,4 +1,18 @@
 theme: jekyll-theme-minimal
-header_pages:
-  - rumerica/index.md
-  - about.md
+<ul class="topics">
+{% for topic in site.topics %}
+    <li>
+        <a title="{{topic.title}}" href="/tags/{{topic.tag}}">{{topic.title}}</a>
+        {% if topic.subtopics %}
+        <ul class="subtopics">
+            {% for subtopic in topic.subtopics %}
+                <li>
+                    <a title="{{subtopic.title}}" href="/tags/{{subtopic.tag}}">{{subtopic.title}}</a>
+                   <!-- add another for if you have another level, and so on... -->
+                </li>
+            {% endfor %} 
+        </ul>
+        {% endif %}
+    </li>
+{% endfor %} 
+<ul>
