@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+# Site settings
+title: Cha Hu         
+SEOTitle: ChaHu         
+description: "茶壶里煮饺子"   
