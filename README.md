@@ -36,21 +36,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-
-<ul class="topics">
-{% for topic in site.topics %}
-    <li>
-        <a title="{{topic.title}}" href="/tags/{{topic.tag}}">{{topic.title}}</a>
-        {% if topic.subtopics %}
-        <ul class="subtopics">
-            {% for subtopic in topic.subtopics %}
-                <li>
-                    <a title="{{subtopic.title}}" href="/tags/{{subtopic.tag}}">{{subtopic.title}}</a>
-                   <!-- add another for if you have another level, and so on... -->
-                </li>
-            {% endfor %} 
-        </ul>
-        {% endif %}
-    </li>
-{% endfor %} 
-<ul>
