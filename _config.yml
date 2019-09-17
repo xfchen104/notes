@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+header_pages:
+  - rumerica/index.md
+  - about.md
